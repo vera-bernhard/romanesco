@@ -20,8 +20,8 @@ def define_computation_graph(vocab_size: int = C.VOCAB_SIZE,
         embedding = tf.get_variable('word_embedding', [vocab_size, embedding_size])
         input_embeddings = tf.nn.embedding_lookup(embedding, inputs)
 
-    with tf.name_scope('RNN'):
-        cell = tf.nn.rnn_cell.BasicLSTMCell(hidden_size, state_is_tuple=True)
+    with tf.name_scope('GRU'):
+        cell = tf.contrib.cudnn_rnn.CudnnGRU(hidden_size, state_is_tuple=True)
         initial_state = cell.zero_state(batch_size, tf.float32)
         rnn_outputs, rnn_states = tf.nn.dynamic_rnn(cell, input_embeddings, initial_state=initial_state)
 
