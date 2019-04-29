@@ -14,16 +14,16 @@ VOCAB_FILENAME = 'vocab.json'
 CONFIG_FILENAME = 'config.json'
 
 VOCAB_SIZE = 15000
-BATCH_SIZE = 64
+BATCH_SIZE = 32
 
-NUM_EPOCHS = 8
+NUM_EPOCHS = 20
 
 # num_steps and learning_rate are hardcoded here; at the moment,
 # the only way to change them is to edit this file
 NUM_STEPS = 100 # truncated backprop length
-LEARNING_RATE = 0.001
+LEARNING_RATE = 0.005
 
 HIDDEN_SIZE = 1024  # RNN state size
 EMBEDDING_SIZE = 256  # embedding vector size
 
-SAMPLE_LENGTH = 100
+SAMPLE_LENGTH = 100 # only neede for sampling
