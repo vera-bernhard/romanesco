@@ -21,7 +21,7 @@ def define_computation_graph(vocab_size: int = C.VOCAB_SIZE,
         input_embeddings = tf.nn.embedding_lookup(embedding, inputs)
 
     with tf.name_scope('GRU'):
-        cell = tf.contrib.cudnn_rnn.CudnnGRU(hidden_size, state_is_tuple=True)
+        cell = tf.contrib.cudnn_rnn.CudnnGRU(hidden_size)
         initial_state = cell.zero_state(batch_size, tf.float32)
         rnn_outputs, rnn_states = tf.nn.dynamic_rnn(cell, input_embeddings, initial_state=initial_state)
 
