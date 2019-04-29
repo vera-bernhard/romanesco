@@ -14,7 +14,7 @@ VOCAB_FILENAME = 'vocab.json'
 CONFIG_FILENAME = 'config.json'
 
 VOCAB_SIZE = 20000 # vocab size is 41607
-BATCH_SIZE = 32
+BATCH_SIZE = 64
 
 NUM_EPOCHS = 10
 
@@ -24,6 +24,6 @@ NUM_STEPS = 50 # truncated backprop length
 LEARNING_RATE = 0.001
 
 HIDDEN_SIZE = 2048  # RNN state size
-EMBEDDING_SIZE = 256  # embedding vector size
+EMBEDDING_SIZE = 512  # embedding vector size
 
 SAMPLE_LENGTH = 100 # only neede for sampling
