@@ -20,10 +20,10 @@ NUM_EPOCHS = 10
 
 # num_steps and learning_rate are hardcoded here; at the moment,
 # the only way to change them is to edit this file
-NUM_STEPS = 50 # truncated backprop length
+NUM_STEPS = 500 # truncated backprop length
 LEARNING_RATE = 0.001
 
 HIDDEN_SIZE = 2048  # RNN state size
-EMBEDDING_SIZE = 512  # embedding vector size
+EMBEDDING_SIZE = 256  # embedding vector size
 
 SAMPLE_LENGTH = 100 # only neede for sampling
