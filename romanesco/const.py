@@ -16,7 +16,7 @@ CONFIG_FILENAME = 'config.json'
 VOCAB_SIZE = 15000
 BATCH_SIZE = 32
 
-NUM_EPOCHS = 5
+NUM_EPOCHS = 10
 
 # num_steps and learning_rate are hardcoded here; at the moment,
 # the only way to change them is to edit this file
