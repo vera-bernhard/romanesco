@@ -13,7 +13,7 @@ VOCAB_FILENAME = 'vocab.json'
 
 CONFIG_FILENAME = 'config.json'
 
-VOCAB_SIZE = 20000 # vocab size is 41607
+VOCAB_SIZE = 10000 # vocab size is 41607
 BATCH_SIZE = 64
 
 NUM_EPOCHS = 10
